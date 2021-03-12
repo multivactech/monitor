@@ -1,0 +1,18 @@
+{
+    "remoteDir": "/home/testnet/go/src/github.com/multivactech/MultiVAC/test",
+    "localDir": "/home/testnet/go/src/github.com/multivactech/monitor/data",
+    
+    "sshNodes":[
+        {"host": "127.0.0.1", "passwd": "PutYourPasswordHere"}
+    ],
+
+    "mailEmail": "xxx@mtv.ac",
+    "mailPasswd": "PutYourPasswordHere",
+
+    "mailDestination": "dev@mtv.ac",
+
+    "errorWhiteList" : [
+        "handleSendRawTransaction"
+    ]
+
+}

@@ -1,0 +1,17 @@
+remotedir: /home/testnet/go/src/github.com/multivactech/MultiVAC/test
+localdir: /home/testnet/go/src/github.com/multivactech/monitor/data
+
+sshnodes:
+  -
+    host: 127.0.0.1
+    passwd: PutYourPasswordHere
+
+
+mailconfig:
+  sender: xxx@mtv.ac
+  passwd: PutYourPasswordHere
+  receiver: yyy@mtv.ac
+
+errorwhitelist:
+  - handleSendRawTransaction
+  
