@@ -1,19 +1,16 @@
-# MultiVAC 监控程序
+# MultiVAC monitor
 
-## 1. 功能
+## 1. Function
+1. Query whether there is an error.. log from the log folder of MultiVAC. If there is, judge whether there is an update. If the content is updated, prepare to send an email warning.
+2. Take data from MultiVAC to analyze whether the block information of a miner in a certain segment can form a chain.
+3. For a shard, check whether all miners in the shard are at the same height and whether the block information is the same.
+4. Check whether a miner doesn't get out of the block and whether it is offline.
 
-   1. 从Multivac的日志文件夹下查询是否有error.log，如果有，判断是否存在更新，假如更新了内容，则准备发送邮件警告。
+## 2. Usage
 
-   2. 从MultiVAC下取data数据，分析某一矿工在某一分片内的出块信息是否可以构成链。
+Need to use with MultiVAC, this program runs on the monitoring server.
 
-   3. 对某一分片而言，检测该分片内的所有矿工是否处于同一高度，是否出块信息相同。
+   `go run main.go` 
 
-   4. 检测某矿工是否不出块，是否掉线。
+Before using, you need to check whether the configuration information in config/config and adjust it to the corresponding configuration.
 
-## 2. 使用方法
-
-需要配合MultiVAC使用，此程序运行在监控服务器上。
-
-   `go run main.go` 即可
-
-使用前需要检查`config/config.json`中的配置信息是否正确，并调整为对应的配置。
